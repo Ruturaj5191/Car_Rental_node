@@ -4,11 +4,12 @@ require("dotenv").config();
 
 
 var conn=mysql.createConnection({
-    "user":"root",
-    "password":"",
-    "host":"localhost",
-    "database":"carrental_node",
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
 });
+
 
 var exe=util.promisify(conn.query).bind(conn);
 

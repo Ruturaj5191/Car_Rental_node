@@ -8,15 +8,14 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
+    "dotenv": "^16.6.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-fileupload": "^1.5.2",
     "express-session": "^1.18.2",
-    "mysql": "^2.18.1",
-    "dotenv": "^16.3.1"
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
   }
 }
-
