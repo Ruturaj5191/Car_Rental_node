@@ -4,7 +4,9 @@ var upload=require("express-fileupload");
 var session=require("express-session");
 var user_routes=require("./routes/user_routes")
 var admin_routes=require("./routes/admin_routes");
+require("dotenv").config(); 
 var app=express();
+
 
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(upload());
